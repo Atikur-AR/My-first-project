@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run SDL3",
+            "type": "shell",
+            "command": "g++ game.cpp -o game.exe -ID:/MSYS2/ucrt64/include -LD:/MSYS2/ucrt64/lib -lSDL3 -mwindows && ./game.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
